@@ -1,0 +1,370 @@
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #cce7f8, #003366); /* Blue gradient */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #003366; /* Dark Blue */
+    text-transform: uppercase;
+    animation: slideInLeft 1s ease-out;
+}
+
+.sub-title {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #006db4; /* Medium Blue */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.travel-selection {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.selection-text {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #004c8c; /* Deep Blue */
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out 0.5s forwards;
+}
+
+.travel-btn {
+    background-color: #1d2d6e; /* Dark Blue */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px; /* Rounded buttons */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: buttonFadeIn 1s ease-in-out 0.7s forwards;
+}
+
+.travel-btn:hover {
+    background-color: #1a4787;
+    transform: scale(1.1);
+}
+
+.travel-btn:active {
+    transform: scale(1);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Playlist Section */
+#playlist-section {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#playlist-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1d2d6e;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.playlist-container {
+    margin-bottom: 30px;
+}
+
+/* Product Features */
+.linkbuds-container {
+    background-color: #cce2f0e2;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin-top: 50px;
+    animation: slideInUp 1s ease-out;
+}
+
+.linkbuds-container h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
+    color: #1d2d6e;
+}
+
+.product-features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.feature {
+    text-align: center;
+    margin: 20px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    animation: bounce 1s infinite alternate;
+}
+
+.footer {
+    background: linear-gradient(to right, #004c8c, #003366); /* Blue gradient */
+    color: #ffffff;
+    padding: 20px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    position: relative;
+    border-top: 5px solid #578daf; 
+}
+.footer-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #cce7f8; /* Soft light blue */
+}
+
+.footer-content h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footer-content ul li {
+    font-size: 1em;
+    margin: 6px 5;
+    font-family: 'Quicksand', sans-serif;
+    color:whitesmoke;
+}
+
+.footer-content ul li a {
+    color: #cce7f8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content ul li a:hover {
+    color: #ffffff;
+}
+.footerA {
+    padding: 20px;
+    text-align: center;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 30px;
+    background: #f5853a; /* Bright orange */
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background: #e98f53;
+    transform: translateY(-5px);
+}
+
+
+.social-link {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 1.2em;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: scale(1.2);
+}
+
+.social-link:hover {
+    color: #ebf0f4;
+}
+.contact-info {
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(to right, #003366, #004c8c); /* Subtle blue gradient */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #cce7f8; /* Light blue for headings */
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2; /* Increased line height for readability */
+}
+
+.contact-info ul li {
+    display: flex;
+    align-items: center; /* Align icons and text */
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.contact-info ul li a {
+    color: #cce7f8;
+    text-decoration: none;
+    margin-left: 10px; /* Spacing between icon and text */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #ffffff; /* White on hover for emphasis */
+    text-decoration: underline;
+}
+
+.contact-info ul li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; /* Spacing between icon and text */
+    filter: brightness(0) invert(1); /* Ensures icons match light text on dark backgrounds */
+    transition: transform 0.3s ease;
+}
+
+.contact-info ul li img:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+
+/* Mobile Optimized */
+@media (max-width: 768px) {
+    .travel-btn {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .product-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin: 15px;
+    }
+
+    .linkbuds-container {
+        padding: 30px;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+        }
+    }
+    
+    @keyframes buttonFadeIn {
+        0% {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }

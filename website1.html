@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Soundtrack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Open+Sans:wght@400;600&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="title">Find Your Perfect Travel Soundtrack</h1>
+            <p class="sub-title">Pick your destination and let us create your ultimate playlist</p>
+        </header>
+
+        <!-- Travel Type Selection -->
+        <section class="travel-selection">
+            <h2>Where are you heading?</h2>
+            <p class="selection-text">Choose your adventure type and let the music set the mood.</p>
+            <div class="buttons-container">
+                <button class="travel-btn" onclick="generatePlaylist('Beach')">Beach</button>
+                <button class="travel-btn" onclick="generatePlaylist('City')">City</button>
+                <button class="travel-btn" onclick="generatePlaylist('Mountains')">Hiking</button>
+                <button class="travel-btn" onclick="generatePlaylist('Flight')">Flight</button>
+                <button class="travel-btn" onclick="generatePlaylist('Road Trip')">Road Trip</button>
+            </div>
+        </section>
+
+        <!-- Playlist Section -->
+        <section id="playlist-section" class="playlist-section">
+            <h2 id="playlist-title" class="playlist-title">Your Playlist Awaits</h2>
+            <div class="playlist-container" id="playlist-container">
+                <!-- Dynamic Playlist will be injected here -->
+            </div>
+        </section>
+<!-- Product Features Section -->
+<div class="linkbuds-container">
+    <h3>Experience the Soundtrack of Your Journey with Sony LinkBuds</h3>
+    <p>Perfect for any adventure, from beach escapes to mountain hikes.</p>
+    <div class="product-features">
+        <div class="feature">
+            <img src="https://store.sony.com.au/dw/image/v2/ABBC_PRD/on/demandware.static/-/Sites-sony-master-catalog/default/dw8804af06/images/WFLS900NW/WFLS900NW_3.png?sw=710&sh=710&sm=fit" style="width:200px;height:200px;" alt="Comfort">
+            <p>Ultra-lightweight comfort, stays in place all day.</p>
+        </div>
+        <div class="feature">
+            <img src="https://store.sony.com.au/dw/image/v2/ABBC_PRD/on/demandware.static/-/Sites-sony-master-catalog/default/dw15612123/images/WFLS900NB/WFLS900NB_3.png?sw=442&sh=442&sm=fit" style="width:200px;height:200px;" alt="Sound Quality">
+            <p>High power neodymium magnets</p>
+        </div>
+        <div class="feature">
+            <img src="https://store.sony.com.au/dw/image/v2/ABBC_PRD/on/demandware.static/-/Sites-sony-master-catalog/default/dwa2f9a5e1/images/WFLS900NL/WFLS900NL_3.png?sw=442&sh=442&sm=fit" style="width:200px;height:200px;" alt="Sound Quality">
+            <p>Crystal clear sound that brings your playlist to life.</p>
+        </div>
+        <div class="feature">
+            <img src="https://store.sony.co.nz/dw/image/v2/ABBC_PRD/on/demandware.static/-/Sites-sony-master-catalog/default/dw9a6eba82/images/WFLS900NC/WFLS900NC_3.png" style="width:200px;height:200px;" alt="Portability">
+            <p>Compact and portable design, easy to take anywhere.</p>
+        </div>
+    </div>
+    <footer class="footerA">
+    <a href="https://store.sony.com.my/"class="cta-btn" >Shop Sony LinkBuds Now</a>
+    </div>
+    </div>
+</div>
+</footer>
+</section>
+
+
+
+       <!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Main Title -->
+        <h2>Experience the Adventure with Sony LinkBuds</h2>
+        
+        <!-- Call-to-Action Button -->
+        <a href="https://store.sony.com.my/products/linkbuds-s/?locale=en&srsltid=AfmBOoqJBy8TCmfBpe7C9KqUrrNy3J8K420d6VZvF2JfXAKL73-_OiGV&variant=40407049109538" class="cta-btn">
+            Buy Now & Get 10% Off!
+        </a>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="mailto:contact@sonytravel.com" class="social-link" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="Gmail Icon"> Gmail
+            </a>
+            <a href="https://www.instagram.com/sonyofficial" class="social-link" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram Icon"> Instagram
+            </a>
+            <a href="https://www.tiktok.com/@sonyofficial" class="social-link" target="_blank">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/741/129/non_2x/tiktok-logo-icon-social-media-icon-free-png.png" alt="TikTok Icon"> TikTok
+            </a>
+        </div>
+
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png"width="40px" height="50" alt="Phone Icon">
+                    Phone: +1-800-555-SONY
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1006/1006547.png" width="40px" height="50" alt="Live Chat Icon">
+                    Live Chat: <a href="https://support.sony.com" target="_blank">support.sony.com</a>
+                </li>
+            </ul>
+        </div>
+        
+
+</footer>
+
+    <!-- Scripts -->
+    <script>
+        function generatePlaylist(travelType) {
+            const playlistContainer = document.getElementById('playlist-container');
+            const playlistTitle = document.getElementById('playlist-title');
+            let playlistContent = '';
+            let playlistText = '';
+
+            // Set the playlist iframe and title based on the travel type
+            switch (travelType) {
+                case 'Beach':
+                    playlistText = "Soundtrack for Your Beach Escape";
+                    playlistContent = `
+                        <iframe style="border-radius:25px" 
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4Y4RhrZqHhr?utm_source=generator" 
+                                width="100%" height="500" 
+                                frameBorder="0" allowfullscreen 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"></iframe>`;
+                    break;
+                case 'City':
+                    playlistText = "Vibes for Your City Adventure";
+                    playlistContent = `
+                        <iframe style="border-radius:25px" 
+                                src="https://open.spotify.com/embed/playlist/1EG0Y3gnxsyFCTt0UcUPXw?utm_source=generator" 
+                                width="100%" height="500" 
+                                frameBorder="0" allowfullscreen 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"></iframe>`;
+                    break;
+                case 'Mountains':
+                    playlistText = "Mountain Hike Tunes";
+                    playlistContent = `
+                        <iframe style="border-radius:25px" 
+                                src="https://open.spotify.com/embed/playlist/3WsFUNP6HgvHSWVFBsli0y?utm_source=generator" 
+                                width="100%" height="500" 
+                                frameBorder="0" allowfullscreen 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"></iframe>`;
+                    break;
+                case 'Flight':
+                    playlistText = "Relaxing Tunes for Your Flight";
+                    playlistContent = `
+                        <iframe style="border-radius:25px" 
+                                src="https://open.spotify.com/embed/playlist/7Dz0RMNIAhOSROGC5eeRCn?utm_source=generator" 
+                                width="100%" height="500" 
+                                frameBorder="0" allowfullscreen 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"></iframe>`;
+                    break;
+                case 'Road Trip':
+                    playlistText = "Ultimate Road Trip Playlist";
+                    playlistContent = `
+                        <iframe style="border-radius:25px" 
+                                src="https://open.spotify.com/embed/playlist/3thUQNBZz9ZEqhaiN2UzBG?utm_source=generator" 
+                                width="100%" height="500" 
+                                frameBorder="0" allowfullscreen 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"></iframe>`;
+                    break;
+            }
+
+            // Update the playlist section with the selected playlist
+            playlistTitle.textContent = playlistText;
+            playlistContainer.innerHTML = playlistContent;
+            document.getElementById('playlist-section').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
